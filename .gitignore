@@ -1,3 +1,9 @@
 .DS_Store
+
+# Editor folders
 .idea/
 nbproject/
+
+# Node.js
+npm-debug.log
+node_modules/
