@@ -1,3 +1,5 @@
+#!/bin/sh
+
 echo "Configuring vim..."
 
 currentDir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
