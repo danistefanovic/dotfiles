@@ -1,0 +1,26 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AngularJS",
+		"BracketHighlighter",
+		"DocBlockr",
+		"EditorConfig",
+		"GitGutter",
+		"HTML-CSS-JS Prettify",
+		"JavaScriptNext - ES6 Syntax",
+		"Line Endings Unify",
+		"Markdown Extended",
+		"Package Control",
+		"Sass",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-contrib-eslint",
+		"SyncedSideBar",
+		"TernJS",
+		"Theme - Spacegray"
+	]
+}

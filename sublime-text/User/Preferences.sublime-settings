@@ -1,0 +1,17 @@
+{
+	"color_scheme": "Packages/User/SublimeLinter/Blackboard (SL).tmTheme",
+	"enable_tab_scrolling": false,
+	"folder_exclude_patterns":
+	[
+		".git",
+		".sass-cache",
+		".tmp"
+	],
+	"font_size": 10,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"theme": "Spacegray.sublime-theme",
+	"translate_tabs_to_spaces": true
+}

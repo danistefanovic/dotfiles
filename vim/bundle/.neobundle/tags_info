@@ -1,0 +1,6 @@
+ctrlp.vim
+neobundle.vim
+nerdtree
+syntastic
+vim-colors-solarized
+vim-gitgutter

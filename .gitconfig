@@ -1,0 +1,21 @@
+[push]
+	default = simple
+[alias]
+	ci = commit
+	co = checkout
+	d = diff
+	ds = diff --staged
+	s = status -s
+	st = status
+
+	# Delete local branches which are no longer on remote
+	sb = !git branch --merged | egrep -v '^\\*|master|dev|development|staging' | xargs -n 1 git branch -d  && echo '...branches synced'
+	# Pretty git log
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'  --date=relative
+[core]
+	editor = vim
+	excludesfile = %USERPROFILE%\\.gitignore
+	autocrlf = input
+[user]
+	name = Daniel Stefanovic
+	email = daniel.stefanovic@gmail.com

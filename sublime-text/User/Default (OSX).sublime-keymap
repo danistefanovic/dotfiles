@@ -1,0 +1,8 @@
+[
+    { "keys": ["ctrl+shift+f"], "command": "htmlprettify" },
+    { "keys": ["f12"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+    { "keys": ["super+shift+w"], "command": "close_all" },
+    { "keys": ["f2"], "command": "side_bar_rename" },
+    { "keys": ["ctrl+backspace"], "command": "side_bar_delete" },
+    { "keys": ["ctrl+n"], "command": "side_bar_new_file2" }
+]
