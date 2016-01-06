@@ -15,5 +15,5 @@ alias doco='docker-compose'
 #######################################################
 # ENV VARIABLES
 #######################################################
+export PATH=~/bin:$PATH
 export CHROME_BIN="/opt/homebrew-cask/Caskroom/google-chrome/latest/Google Chrome.app/Contents/MacOS/Google Chrome"
-
