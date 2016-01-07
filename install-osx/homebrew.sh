@@ -52,6 +52,8 @@ cask_install firefox
 cask_install google-chrome
 cask_install iterm2
 cask_install keepassx
+cask_install psequel
+cask_install sequel-pro
 cask_install sketch
 cask_install skype
 cask_install spotify
