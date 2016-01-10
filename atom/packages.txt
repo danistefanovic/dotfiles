@@ -1,5 +1,6 @@
-docblockr@0.7.3
-editorconfig@1.0.1
-linter@1.3.0
-linter-eslint@3.0.2
+docblockr
+editorconfig
+language-jsx
+linter
+linter-eslint
 
