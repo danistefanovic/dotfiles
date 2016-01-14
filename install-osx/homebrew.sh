@@ -38,6 +38,7 @@ echo "Installing brew packages..."
 brew_install brew-cask
 brew_install node
 brew_install nvm
+brew_install shellcheck
 brew_install zsh
 echo "...brew packages installed"
 
