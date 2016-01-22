@@ -7,3 +7,5 @@ nbproject/
 # Node.js
 npm-debug.log
 node_modules/
+node_modules_local/
+node_modules_docker/
