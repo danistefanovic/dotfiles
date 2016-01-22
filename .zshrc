@@ -11,6 +11,14 @@ fi
 eval $(docker-machine env default)
 
 #######################################################
+# iTerm confg
+#######################################################
+
+# Disable history sharing between sessions
+unsetopt inc_append_history
+unsetopt share_history
+
+#######################################################
 # ALIASES
 #######################################################
 alias do='docker'
