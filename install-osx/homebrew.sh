@@ -47,7 +47,6 @@ echo "...brew packages installed"
 ##########################################################
 echo "Installing brew cask packages..."
 cask_install atom
-cask_install dockertoolbox
 cask_install dropbox
 cask_install firefox
 cask_install google-chrome

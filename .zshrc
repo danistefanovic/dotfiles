@@ -6,9 +6,11 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 #######################################################
-# INIT DOCKER
-######################################################
-eval $(docker-machine env default)
+# NVM
+#######################################################
+export NVM_DIR=~/.nvm
+. $(brew --prefix nvm)/nvm.sh
+
 
 #######################################################
 # iTerm confg
@@ -22,8 +24,10 @@ unsetopt share_history
 # ALIASES
 #######################################################
 alias do='docker'
-alias doma='docker-machine'
 alias doco='docker-compose'
+
+# Docker: Delete untagged images
+alias ddui='docker rmi $(docker images | grep "^<none>" | awk "{print $3}")'
 
 #######################################################
 # ENV VARIABLES
