@@ -35,3 +35,5 @@ alias ddui='docker rmi $(docker images | grep "^<none>" | awk "{print $3}")'
 #######################################################
 export PATH=~/bin:$PATH
 export CHROME_BIN="/opt/homebrew-cask/Caskroom/google-chrome/latest/Google Chrome.app/Contents/MacOS/Google Chrome"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
