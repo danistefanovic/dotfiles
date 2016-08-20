@@ -16,3 +16,48 @@
 # This file uses CoffeeScript Object Notation (CSON).
 # If you are unfamiliar with CSON, you can read more about it here:
 # https://github.com/bevry/cson#what-is-cson
+
+'.source.js':
+  'React Component':
+    'prefix': 'comp'
+    'body': """
+      import React, { PropTypes } from 'react';
+
+      function $1(props) {
+          return (
+              <div>
+                  {props.children}
+              </div>
+          );
+      }
+
+      $1.propTypes = {
+          children: PropTypes.node
+      };
+
+      export default $1;
+
+    """
+
+  'React Component index.js':
+    'prefix': 'ind'
+    'body': """
+      import $1 from './$1';
+      export default $1;
+
+    """
+
+  'React Storybook story':
+    'prefix': 'story'
+    'body': """
+      import React from 'react';
+      import { action, storiesOf } from '@kadira/storybook';
+
+      import $1 from './$1';
+
+      storiesOf('$1', module)
+          .add('default', () => (
+              <$1 />
+          ));
+
+    """
