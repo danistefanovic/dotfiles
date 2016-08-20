@@ -25,6 +25,7 @@ unsetopt share_history
 #######################################################
 alias do='docker'
 alias doco='docker-compose'
+alias doma='docker-machine'
 
 # Docker: Delete untagged images
 alias ddui='docker rmi $(docker images | grep "^<none>" | awk "{print $3}")'
