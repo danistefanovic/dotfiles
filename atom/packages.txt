@@ -1,6 +1,9 @@
-docblockr
 editorconfig
 language-jsx
 linter
 linter-eslint
+linter-stylelint
+open-recent
+react
+
 
