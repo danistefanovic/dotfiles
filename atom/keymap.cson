@@ -27,3 +27,5 @@
 # Fix bug with @ symbol on a swiss keyboard layout
 'atom-workspace':
   'alt-g': 'native!'
+'.platform-darwin':
+  'cmd-shift-e': 'tree-view:reveal-active-file'
