@@ -1,3 +1,4 @@
+auto-detect-indentation
 editorconfig
 language-jsx
 linter
