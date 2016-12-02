@@ -39,9 +39,44 @@
 
     """
 
+  'Flow React Component':
+    'prefix': 'fcomp'
+    'body': """
+      // @flow
+
+      import React from 'react';
+
+      import styles from './$1.css';
+
+      type PropType = {
+          children?: any
+      };
+
+      function $1(props: PropType): React.Element<*> {
+          return (
+              <div className={styles.root}>
+                  {props.children}
+              </div>
+          );
+      }
+
+      export default $1;
+
+    """
+
   'React Component index.js':
     'prefix': 'ind'
     'body': """
+      import $1 from './$1';
+      export default $1;
+
+    """
+
+  'Flow React Component index.js':
+    'prefix': 'find'
+    'body': """
+      // @flow
+
       import $1 from './$1';
       export default $1;
 
@@ -59,5 +94,69 @@
           .add('default', () => (
               <$1 />
           ));
+
+    """
+
+  'Flow React Storybook story':
+    'prefix': 'fstory'
+    'body': """
+      // @flow
+
+      import React from 'react';
+      import { action, storiesOf } from 'storybook';
+
+      import $1 from './$1';
+
+      storiesOf('$1', module)
+          .add('default', (): React.Element<*> => (
+              <$1 />
+          ));
+
+    """
+  'Unit test':
+    'prefix': 'test'
+    'body': """
+      import $1 from './$1';
+
+      describe('$1', () => {
+          it('should return true', () => {
+              expect($1(), 'to be', true);
+          });
+      });
+
+    """
+
+  'Component Unit test':
+    'prefix': 'ctest'
+    'body': """
+      import React from 'react';
+
+      import { shallow } from 'utils/test/render';
+      import $1 from './$1';
+
+      describe('$1', () => {
+          it('should render', () => {
+              const component = shallow(<$1 />);
+
+              return expect(component, 'to have rendered',
+                  <div />
+              );
+          });
+      });
+
+    """
+
+'.source.css':
+  'Component CSS':
+    'prefix': 'comp'
+    'body': """
+      @import 'variables';
+
+      /* ============================================================================
+       * Root component
+       * ============================================================================ */
+      .root {
+
+      }
 
     """
