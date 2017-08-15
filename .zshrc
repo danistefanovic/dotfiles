@@ -29,6 +29,25 @@ alias doma='docker-machine'
 # Docker: Delete untagged images
 alias ddui='docker rmi $(docker images | grep "^<none>" | awk "{print $3}")'
 
+
+#######################################################
+# VIM bindings
+#######################################################
+
+# Enable VIM bindings
+bindkey -v
+
+# Add some "standard" bindings
+bindkey '^P' up-history
+bindkey '^N' down-history
+bindkey '^?' backward-delete-char
+bindkey '^h' backward-delete-char
+bindkey '^w' backward-kill-word
+bindkey '^r' history-incremental-search-backward
+
+# Reduce the delay between the modes
+export KEYTIMEOUT=1
+
 #######################################################
 # ENV VARIABLES
 #######################################################
